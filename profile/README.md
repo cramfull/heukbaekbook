@@ -1,5 +1,5 @@
-# 캡스톤 디자인
-> Since 2024.01.16
+# 흑백문고(heukbaekbook)
+> Since 2024.10.15
 
 ## 👨‍💻  구성원
 
@@ -7,11 +7,8 @@
     <a href="https://github.com/jd-hyun">
       <img src="https://avatars.githubusercontent.com/u/98350310?v=4" width="100">
     </a>
-    <a href="https://github.com/supportlaver">
-      <img src="https://avatars.githubusercontent.com/u/117079397?v=4/u/98350310?v=4" width="100">
-    </a>
-    <a href="https://github.com/namkikim0718">
-      <img src="https://avatars.githubusercontent.com/u/113903598?v=4/u/117079397?v=4/u/98350310?v=4" width="100">
+    <a href="https://github.com/daemin-kim">    
+        <img src="https://avatars.githubusercontent.com/u/56399681?s=400&u=c257ff069dce96fc6ea385d11fae746956aa34ce&v=4" width="100">
     </a>
 </p>
 
