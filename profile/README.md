@@ -10,6 +10,21 @@
     <a href="https://github.com/daemin-kim">    
         <img src="https://avatars.githubusercontent.com/u/56399681?s=400&u=c257ff069dce96fc6ea385d11fae746956aa34ce&v=4" width="100">
     </a>
+    <a href="https://github.com/cramfull">    
+        <img src="https://avatars.githubusercontent.com/u/130737411?v=4" width="100">
+    </a>
+    <a href="https://github.com/banbakbulga">    
+        <img src="https://avatars.githubusercontent.com/u/126759912?v=4" width="100">
+    </a>
+    <a href="https://github.com/dohyeon321">    
+        <img src="https://avatars.githubusercontent.com/u/127070191?v=4" width="100">
+    </a>
+    <a href="https://github.com/juhabae">    
+        <img src="https://avatars.githubusercontent.com/u/141327091?v=4" width="100">
+    </a>
+    <a href="https://github.com/wjdtjdgns">    
+        <img src="https://avatars.githubusercontent.com/u/105824163?v=4" width="100">
+    </a>
 </p>
 
 ---
