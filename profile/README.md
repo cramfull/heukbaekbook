@@ -2,30 +2,59 @@
 > Since 2024.10.15
 
 ## 👨‍💻  구성원
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/dohyeon321">
+        <img src="https://avatars.githubusercontent.com/u/127070191?v=4" width="100px" alt="김도현"/><br>
+        <b>김도현</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/daemin-kim">
+        <img src="https://avatars.githubusercontent.com/u/56399681?v=4" width="100px" alt="김대민"/><br>
+        <b>김대민</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/mrkfm">
+        <img src="https://avatars.githubusercontent.com/u/173026488?v=4" width="100px" alt="김현수"/><br>
+        <b>김현수</b>
+      </a>
+    </td>  
+    <td align="center">
+      <a href="https://github.com/juhabae">
+        <img src="https://avatars.githubusercontent.com/u/141327091?v=4" width="100px" alt="배주하"/><br>
+        <b>배주하</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/cramfull">
+        <img src="https://avatars.githubusercontent.com/u/130737411?v=4" width="100px" alt="이승형"/><br>
+        <b>이승형</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/banbakbulga">
+        <img src="https://avatars.githubusercontent.com/u/126759912?v=4" width="100px" alt="양준혁"/><br>
+        <b>양준혁</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/jd-hyun">
+        <img src="https://avatars.githubusercontent.com/u/98350310?v=4" width="100px" alt="정동현"/><br>
+        <b>정동현</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/wjdtjdgns">
+        <img src="https://avatars.githubusercontent.com/u/105824163?v=4" width="100px" alt="정성훈"/><br>
+        <b>정성훈</b>
+      </a>
+    </td>
+  </tr>
+</table>
 
-<p>
-    <a href="https://github.com/jd-hyun">
-      <img src="https://avatars.githubusercontent.com/u/98350310?v=4" width="100">
-    </a>
-    <a href="https://github.com/daemin-kim">    
-        <img src="https://avatars.githubusercontent.com/u/56399681?s=400&u=c257ff069dce96fc6ea385d11fae746956aa34ce&v=4" width="100">
-    </a>
-    <a href="https://github.com/cramfull">    
-        <img src="https://avatars.githubusercontent.com/u/130737411?v=4" width="100">
-    </a>
-    <a href="https://github.com/banbakbulga">    
-        <img src="https://avatars.githubusercontent.com/u/126759912?v=4" width="100">
-    </a>
-    <a href="https://github.com/dohyeon321">    
-        <img src="https://avatars.githubusercontent.com/u/127070191?v=4" width="100">
-    </a>
-    <a href="https://github.com/juhabae">    
-        <img src="https://avatars.githubusercontent.com/u/141327091?v=4" width="100">
-    </a>
-    <a href="https://github.com/wjdtjdgns">    
-        <img src="https://avatars.githubusercontent.com/u/105824163?v=4" width="100">
-    </a>
-</p>
 
 ---
 
