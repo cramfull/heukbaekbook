@@ -50,11 +50,11 @@
             - [Add] UI button 구현
     <br><br>
 - `branch 규칙`
-    - 각자의 영어 이름을 딴 branch 명을 사용한다.
+    - 각자가 개발하고 있는 기능의 영어 이름을 딴 branch 명을 사용한다.
     - 예시: 
     ```
   git checkout -b <브랜치명>      
-  git checkout -b donghyun
+  git checkout -b feature/login
     ```
     
 - `commit message 규칙`
