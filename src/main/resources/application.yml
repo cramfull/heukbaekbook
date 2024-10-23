@@ -1,0 +1,79 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: ConfigServer
+
+  #config server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:nhnacademy-be7-heukbaekbook/heukbaekbook-config.git
+          ignoreLocalSshSettings: true
+          #TODO-2 private-key's value -> ${db.privateKey}
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+          timeout: 5
+
+#config client
+
+#TODO-3 Config Client aaplication.yml
+#spring:
+#  application:
+#    name: conf
+#  profiles:
+#    active: dev
+#  config:
+#    import: optional:configserver:http://${db.username}:${db.password}@{}
