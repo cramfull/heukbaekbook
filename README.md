@@ -1,3 +1,3 @@
-# cofig-server
+# config-server
 
 heukbaekbook cofigserver
