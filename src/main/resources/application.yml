@@ -1,6 +1,3 @@
-server:
-  port: 9000
-
 spring:
   application:
     name: ConfigServer
@@ -12,7 +9,6 @@ spring:
         git:
           uri: git@github.com:nhnacademy-be7-heukbaekbook/heukbaekbook-config.git
           ignoreLocalSshSettings: true
-          #TODO-2 private-key's value -> ${db.privateKey}
           private-key: |
             -----BEGIN RSA PRIVATE KEY-----
             MIIJJwIBAAKCAgEApoxcUP3BMQe5q3NUJr/StcNEuH15kUJIiu5Nlo5fiS3/r1w6
@@ -65,15 +61,6 @@ spring:
             15wyi9lVA3HlhqkhrOFr6n+JJ8xyojyC45gUG2p4w2KC79Q5zd5yzmf7uZNp3Ezd
             ipy9iUSn4q6mCIBAdwOWip5JRTGPMUDtABy39xz0TY8vUKUdNe5pff+2nw==
             -----END RSA PRIVATE KEY-----
-          timeout: 5
 
-#config client
-
-#TODO-3 Config Client aaplication.yml
-#spring:
-#  application:
-#    name: conf
-#  profiles:
-#    active: dev
-#  config:
-#    import: optional:configserver:http://${db.username}:${db.password}@{}
+server:
+  port: 9000
