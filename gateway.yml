@@ -1,0 +1,28 @@
+server:
+  port: 8082
+
+jwt:
+  secret-key: h3w9qWUDH2K1S7owJK9rgrbQjF6jbRof0ep/6nBN+fA=
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:1234@localhost:8082/eureka
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - name: JwtAuthenticationFilter
+          args:
+            excludedPaths:
+              - /auth
+              - /books
+              - /public
+      routes:
+        - id: any-route
+          uri: lb://any-service
+          predicates:
+            - Path=/**
