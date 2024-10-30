@@ -9,7 +9,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://admin:1234@localhost:8082/eureka
+      defaultZone: http://localhost:8761/eureka
 
 spring:
   cloud:
@@ -21,7 +21,7 @@ spring:
               - /api/auth/login
               - /books
       routes:
-        - id: any-route
-          uri: lb://any-service
+        - id: auth-service-route
+          uri: http://localhost:8083
           predicates:
-            - Path=/**
+            - Path=/api/auth/**
