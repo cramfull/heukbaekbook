@@ -15,12 +15,11 @@ spring:
   cloud:
     gateway:
       default-filters:
-        - name: JwtAuthenticationFilter
+        - name: JwtAuthorizationFilter
           args:
             excludedPaths:
-              - /auth
+              - /api/auth/login
               - /books
-              - /public
       routes:
         - id: any-route
           uri: lb://any-service
