@@ -19,9 +19,13 @@ spring:
           args:
             excludedPaths:
               - /api/auth/login
-              - /books
+              - /api/books/**
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
           predicates:
             - Path=/api/auth/**
+        - id: book
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/books/**
