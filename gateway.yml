@@ -19,6 +19,7 @@ spring:
           args:
             excludedPaths:
               - /api/auth/login
+              - /api/auth/admin/login
               - /api/books/**
       routes:
         - id: auth-service-route
