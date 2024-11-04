@@ -20,7 +20,12 @@ spring:
             excludedPaths:
               - /api/auth/login
               - /api/auth/admin/login
+              - /api/auth/logout
               - /api/books/**
+            adminPaths:
+              - /api/admin/**
+            memberPaths:
+              - /api/member/**
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
@@ -30,3 +35,4 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/books/**
+
