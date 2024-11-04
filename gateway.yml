@@ -22,7 +22,6 @@ spring:
               - /api/auth/admin/login
               - /api/auth/logout
               - /api/books/**
-              - /api/books
             adminPaths:
               - /api/admin/**
             memberPaths:
