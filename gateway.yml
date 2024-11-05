@@ -20,18 +20,28 @@ spring:
             excludedPaths:
               - /api/auth/
               - /api/books/
-              - /api/books
+              - /api/members
+              - /api/members/existsLoginId
+              - /api/members/existsEmail
             adminPaths:
-              - /api/admin/
+              - /api/admins/
             memberPaths:
-              - /api/member/
+              - /api/members/
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
           predicates:
             - Path=/api/auth/**
-        - id: book
+         - id: book-service-route
           uri: http://localhost:8084
           predicates:
             - Path=/api/books/**
+        - id: admin-book-service-route
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/admins/**
+        - id: member-service-route
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/members/**
 
