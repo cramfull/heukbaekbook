@@ -18,9 +18,7 @@ spring:
         - name: JwtAuthorizationFilter
           args:
             excludedPaths:
-              - /api/auth/login
-              - /api/auth/admin/login
-              - /api/auth/logout
+              - /api/auth/**
               - /api/books/**
               - /api/books
             adminPaths:
