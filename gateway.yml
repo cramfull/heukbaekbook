@@ -18,13 +18,13 @@ spring:
         - name: JwtAuthorizationFilter
           args:
             excludedPaths:
-              - /api/auth/**
-              - /api/books/**
+              - /api/auth/
+              - /api/books/
               - /api/books
             adminPaths:
-              - /api/admin/**
+              - /api/admin/
             memberPaths:
-              - /api/member/**
+              - /api/member/
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
