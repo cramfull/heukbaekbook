@@ -32,7 +32,7 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/api/auth/**
-         - id: book-service-route
+        - id: book-service-route
           uri: http://localhost:8084
           predicates:
             - Path=/api/books/**
@@ -44,4 +44,3 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/members/**
-
