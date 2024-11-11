@@ -24,7 +24,7 @@ spring:
               - /api/members/existsLoginId
               - /api/members/existsEmail
             adminPaths:
-              - /api/admin/
+              - /api/admin
             memberPaths:
               - /api/members/
       routes:
