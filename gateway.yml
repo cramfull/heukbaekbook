@@ -13,21 +13,28 @@ eureka:
 
 spring:
   cloud:
+    config:
+      enabled: false
+
     gateway:
       default-filters:
         - name: JwtAuthorizationFilter
           args:
             excludedPaths:
-              - /api/auth/
-              - /api/books
-              - /api/members
-              - /api/members/existsLoginId
-              - /api/members/existsEmail
-              #- /api/carts
+              - path: /api/auth/
+                methods: [ GET, POST ]
+              - path: /api/books
+              - path: /api/members/existsLoginId/
+              - path: /api/members/existsEmail/
+                #- /api/carts
+              - path: /api/members
+                methods: [ POST ]
             adminPaths:
-              - /api/admin/
+              - path: /api/admins/
+                methods: [ GET, POST, PUT, DELETE ]
             memberPaths:
-              - /api/members/
+              - path: /api/members
+                methods: [ GET, PUT, DELETE ]
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
@@ -40,11 +47,11 @@ spring:
         - id: cart-service-route
           uri: http://localhost:8084
           predicates:
-            - Path=/api/carts/**
+              - Path=/api/carts/**
         - id: admin-book-service-route
           uri: http://localhost:8084
           predicates:
-            - Path=/api/admin/**
+            - Path=/api/admins/**
         - id: member-service-route
           uri: http://localhost:8084
           predicates:
