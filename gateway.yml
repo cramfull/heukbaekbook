@@ -23,6 +23,7 @@ spring:
               - /api/members
               - /api/members/existsLoginId
               - /api/members/existsEmail
+              - /api/carts
             adminPaths:
               - /api/admin/
             memberPaths:
