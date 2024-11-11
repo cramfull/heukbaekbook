@@ -24,7 +24,7 @@ spring:
               - /api/members/existsLoginId
               - /api/members/existsEmail
             adminPaths:
-              - /api/admins/
+              - /api/admin/
             memberPaths:
               - /api/members/
       routes:
@@ -39,7 +39,7 @@ spring:
         - id: admin-book-service-route
           uri: http://localhost:8084
           predicates:
-            - Path=/api/admins/**
+            - Path=/api/admin/**
         - id: member-service-route
           uri: http://localhost:8084
           predicates:
