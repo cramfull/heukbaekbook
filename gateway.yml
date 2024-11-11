@@ -36,7 +36,10 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/books/**
-           # - Path=/api/carts/**
+        - id: cart-service-route
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/carts/**
         - id: admin-book-service-route
           uri: http://localhost:8084
           predicates:
