@@ -53,3 +53,11 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/members/**
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
