@@ -10,27 +10,24 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-      
+
+spring:
+  cloud:
     gateway:
       default-filters:
         - name: JwtAuthorizationFilter
           args:
             excludedPaths:
-              - path: /api/auth/
-                methods: [GET, POST]
-              - path: /api/books
-                methods: [GET]
-              - path: /api/members/existsLoginId/
-              - path: /api/members/existsEmail/
-                #- /api/carts
-              - path: /api/members
-                methods: [ POST ]
+              - /api/auth/
+              - /api/books
+              - /api/members
+              - /api/members/existsLoginId
+              - /api/members/existsEmail
+              #- /api/carts
             adminPaths:
-              - path: /api/admin/
-                methods: [GET, POST, PUT, DELETE]
+              - /api/admin/
             memberPaths:
-              - path: /api/members
-                methods: [GET, PUT, DELETE]
+              - /api/members/
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
@@ -43,7 +40,7 @@ eureka:
         - id: cart-service-route
           uri: http://localhost:8084
           predicates:
-              - Path=/api/carts/**
+            - Path=/api/carts/**
         - id: admin-book-service-route
           uri: http://localhost:8084
           predicates:
