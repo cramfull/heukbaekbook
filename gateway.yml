@@ -24,7 +24,7 @@ eureka:
               - path: /api/members
                 methods: [ POST ]
             adminPaths:
-              - path: /api/admin/
+              - path: /api/admin
                 methods: [ GET, POST, PUT, DELETE ]
             memberPaths:
               - path: /api/members
