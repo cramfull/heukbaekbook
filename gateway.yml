@@ -14,7 +14,7 @@ eureka:
 spring:
   cloud:
     config:
-      enabled: false
+     # enabled: false
 
     gateway:
       default-filters:
