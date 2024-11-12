@@ -38,11 +38,11 @@ spring:
           predicates:
             - Path=/api/auth/**
         - id: book-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
             - Path=/api/books/**
         - id: cart-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
               - Path=/api/carts/**
         - id: admin-book-service-route
