@@ -19,6 +19,7 @@ eureka:
               - path: /api/auth/
                 methods: [ GET, POST ]
               - path: /api/books
+                methods: [ GET ]
               - path: /api/members/existsLoginId/
               - path: /api/members/existsEmail/
                 #- /api/carts
