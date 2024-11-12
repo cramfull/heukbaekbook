@@ -12,3 +12,9 @@ spring:
         default_batch_fetch_size: 100
     hibernate:
       ddl-auto: none
+  elasticsearch:
+    uris: http://115.94.72.197:9200
+    username: elastic
+    password: nhnacademy123!
+    index:
+      create-on-startup: true
