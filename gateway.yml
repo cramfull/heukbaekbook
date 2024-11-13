@@ -53,3 +53,7 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/members/**
+        - id: payment-service-route
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/payments/**
