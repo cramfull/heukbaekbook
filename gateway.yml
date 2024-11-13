@@ -32,19 +32,19 @@ spring:
             memberPaths:
               - path: /api/members
                 methods: [ GET, PUT, DELETE ]
-      routes:
+        routes:
         - id: auth-service-route
           uri: http://localhost:8083
           predicates:
             - Path=/api/auth/**
         - id: book-service-route
-          uri: lb://SHOP
+          uri: http://localhost:8084
           predicates:
             - Path=/api/books/**
         - id: cart-service-route
-          uri: lb://SHOP
+          uri: http://localhost:8084
           predicates:
-              - Path=/api/carts/**
+            - Path=/api/carts/**
         - id: admin-book-service-route
           uri: http://localhost:8084
           predicates:
