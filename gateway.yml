@@ -65,6 +65,8 @@ spring:
       health-check:
         enabled: true
       interval: 10s
+      cache:
+        ttl: 5s
         
 management:
   endpoint:
