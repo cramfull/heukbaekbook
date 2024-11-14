@@ -24,7 +24,7 @@ spring:
               - path: /api/members/existsLoginId/
               - path: /api/members/existsEmail/
               - path: /api/payments/confirm
-                methods: [POST]
+                methods: [ POST ]
                 #- /api/carts
               - path: /api/members
                 methods: [ POST ]
@@ -46,7 +46,7 @@ spring:
         - id: cart-service-route
           uri: http://localhost:8084
           predicates:
-              - Path=/api/carts/**
+            - Path=/api/carts/**
         - id: admin-book-service-route
           uri: http://localhost:8084
           predicates:
