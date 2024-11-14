@@ -14,6 +14,8 @@ eureka:
   instance:
     status-page-url-path: /actuator/health
     health-check-url-path: /actuator/health
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
 
 management:
   endpoints:
