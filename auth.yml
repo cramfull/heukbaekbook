@@ -1,6 +1,19 @@
-server:
-  port: 8083
-
 jwt:
   secret-key: h3w9qWUDH2K1S7owJK9rgrbQjF6jbRof0ep/6nBN+fA=
   refresh-secret-key: 35wjsyScjp+rBsbbKALuC/TggP302yV9NvGKNqOhLoU=
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    status-page-url-path: /actuator/health
+    health-check-url-path: /actuator/health
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
