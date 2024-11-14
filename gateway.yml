@@ -38,7 +38,7 @@ spring:
           enabled: true
       routes:
         - id: auth-service-route
-          uri: http://localhost:8083
+          uri: lb://AUTH
           predicates:
             - Path=/api/auth/**
         - id: book-service-route
