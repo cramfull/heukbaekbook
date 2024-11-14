@@ -23,8 +23,7 @@ spring:
               - path: /api/books
               - path: /api/members/existsLoginId/
               - path: /api/members/existsEmail/
-              - path: /api/payments/confirm
-                methods: [ POST ]
+              - path: /api/payments
                 #- /api/carts
               - path: /api/members
                 methods: [ POST ]
