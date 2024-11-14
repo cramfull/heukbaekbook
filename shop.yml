@@ -24,9 +24,10 @@ management:
       exposure:
         include: health, info
 
-elasticsearch:
-  uris: http://115.94.72.197:9200
-  username: elastic
-  password: nhnacademy123!
-  index:
-    create-on-startup: true
+spring:
+  elasticsearch:
+    uris: http://115.94.72.197:9200
+    username: elastic
+    password: nhnacademy123!
+    index:
+      create-on-startup: true
