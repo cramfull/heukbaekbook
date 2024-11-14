@@ -14,8 +14,8 @@ eureka:
   instance:
     status-page-url-path: /actuator/health
     health-check-url-path: /actuator/health
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
 
 management:
   endpoints:
@@ -30,8 +30,3 @@ spring:
     password: nhnacademy123!
     index:
       create-on-startup: true
-  lifecycle:
-    timeout-per-shutdown-phase: 30s
-
-server:
-  shutdown: graceful
