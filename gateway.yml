@@ -34,28 +34,44 @@ spring:
             memberPaths:
               - path: /api/members
                 methods: [ GET, PUT, DELETE ]
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: auth-service-route
           uri: http://localhost:8083
           predicates:
             - Path=/api/auth/**
         - id: book-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
             - Path=/api/books/**
         - id: cart-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
             - Path=/api/carts/**
         - id: admin-book-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
             - Path=/api/admin/**
         - id: member-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
             - Path=/api/members/**
         - id: payment-service-route
-          uri: http://localhost:8084
+          uri: lb://SHOP
           predicates:
             - Path=/api/payments/**
+    loadbalancer:
+      health-check:
+        enabled: true
+        interval: 30s
+        
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
