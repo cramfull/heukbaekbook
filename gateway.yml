@@ -64,7 +64,6 @@ spring:
     loadbalancer:
       health-check:
         enabled: true
-        interval: 30s
         
 management:
   endpoint:
