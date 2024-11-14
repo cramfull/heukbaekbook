@@ -30,3 +30,8 @@ spring:
     password: nhnacademy123!
     index:
       create-on-startup: true
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+
+server:
+  shutdown: graceful
