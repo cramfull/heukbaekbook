@@ -17,3 +17,9 @@ eureka:
   instance:
     status-page-url-path: /actuator/health
     health-check-url-path: /actuator/health
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
