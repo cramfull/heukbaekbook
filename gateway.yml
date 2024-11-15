@@ -21,6 +21,7 @@ spring:
               - path: /api/auth/
                 methods: [ GET, POST ]
               - path: /api/books
+              - path: /api/categories
               - path: /api/members/existsLoginId/
               - path: /api/members/existsEmail/
               - path: /api/payments
