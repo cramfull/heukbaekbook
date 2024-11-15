@@ -20,4 +20,4 @@ spring:
     index:
       create-on-startup: true
     document:
-      index-name: books_dev
+      index-name: hbbooks_dev
