@@ -34,6 +34,7 @@ spring:
             memberPaths:
               - path: /api/members
                 methods: [ GET, PUT, DELETE ]
+              - path: /api/points
       discovery:
         locator:
           enabled: true
@@ -66,6 +67,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/categories/**
+        - id: point-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/points/**
     loadbalancer:
       health-check:
         enabled: true
