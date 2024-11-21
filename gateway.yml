@@ -71,7 +71,7 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/points/**
-            - id: point-service-route
+        - id: order-service-route
           uri: lb://SHOP
           predicates:
             - Path=/api/orders/**
