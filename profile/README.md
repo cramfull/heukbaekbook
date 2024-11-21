@@ -5,15 +5,15 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/dohyeon321">
-        <img src="https://avatars.githubusercontent.com/u/127070191?v=4" width="100px" alt="김도현"/><br>
-        <b>김도현</b>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/daemin-kim">
         <img src="https://avatars.githubusercontent.com/u/56399681?v=4" width="100px" alt="김대민"/><br>
         <b>김대민</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/dohyeon321">
+        <img src="https://avatars.githubusercontent.com/u/127070191?v=4" width="100px" alt="김도현"/><br>
+        <b>김도현</b>
       </a>
     </td>
     <td align="center">
