@@ -25,7 +25,7 @@ spring:
               - path: /api/members/existsLoginId/
               - path: /api/members/existsEmail/
               - path: /api/payments
-                #- /api/carts
+              - path: /api/orders
               - path: /api/members
                 methods: [ POST ]
             adminPaths:
