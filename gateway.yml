@@ -27,6 +27,7 @@ spring:
               - path: /api/payments
               - path: /api/orders
               - path: /api/members
+              - path: /api/delivery-fees
                 methods: [ POST ]
             adminPaths:
               - path: /api/admin/
@@ -75,6 +76,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/orders/**
+        - id: delivery-fee-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/delivery-fees/**
     loadbalancer:
       health-check:
         enabled: true
