@@ -26,8 +26,8 @@ spring:
               - path: /api/members/existsEmail/
               - path: /api/payments
               - path: /api/orders
-              - path: /api/members
               - path: /api/delivery-fees
+              - path: /api/members
                 methods: [ POST ]
             adminPaths:
               - path: /api/admin/
