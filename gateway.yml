@@ -29,6 +29,7 @@ spring:
               - path: /api/delivery-fees
               - path: /api/members
                 methods: [ POST ]
+              - path: /api/refunds
             adminPaths:
               - path: /api/admin/
                 methods: [ GET, POST, PUT, DELETE ]
