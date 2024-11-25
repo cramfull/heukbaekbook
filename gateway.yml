@@ -81,6 +81,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/delivery-fees/**
+        - id: refund-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/refunds/**
     loadbalancer:
       health-check:
         enabled: true
