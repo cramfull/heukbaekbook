@@ -27,6 +27,7 @@ spring:
               - path: /api/payments
               - path: /api/orders
               - path: /api/delivery-fees
+              - path: /api/wrapping-papers
               - path: /api/members
                 methods: [ POST ]
               - path: /api/refunds
@@ -85,6 +86,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/refunds/**
+        - id: wrapping-paper-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/wrapping-papers/**
     loadbalancer:
       health-check:
         enabled: true
