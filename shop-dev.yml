@@ -19,5 +19,4 @@ spring:
     password: nhnacademy123!
     index:
       create-on-startup: true
-    document:
-      index-name: hbbooks_dev
+    index-name: hbbooks_dev
