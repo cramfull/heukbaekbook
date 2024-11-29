@@ -12,3 +12,6 @@ spring:
         default_batch_fetch_size: 1000
     hibernate:
       ddl-auto: none
+  batch:
+    jdbc:
+      initialize-schema: always
