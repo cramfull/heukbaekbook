@@ -91,6 +91,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/wrapping-papers/**
+        - id: review-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/reviews/**
     loadbalancer:
       health-check:
         enabled: true
