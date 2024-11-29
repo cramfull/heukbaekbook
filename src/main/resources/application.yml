@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: batch
+  config:
+    import: optional:configserver:http://localhost:9000
