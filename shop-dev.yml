@@ -20,9 +20,3 @@ spring:
     index:
       create-on-startup: true
     index-name: hbbook_dev
-
-logging:
-  level:
-    com:
-      zaxxer:
-        hikari: DEBUG
