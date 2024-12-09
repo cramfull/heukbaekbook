@@ -24,6 +24,9 @@ spring:
       create-on-startup: true
     index-name: hbbook_dev
 
+  jmx:
+    enabled: true
+
 logging:
   level:
     com:
