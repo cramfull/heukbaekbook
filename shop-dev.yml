@@ -7,6 +7,12 @@ spring:
     hikari:
       maximum-pool-size: 10
       register-mbeans: true
+  data:
+    redis:
+      host: 133.186.241.167
+      port: 6379
+      password: '*N2vya7H@muDTwdNMR!'
+      database: 105
   jpa:
     properties:
       hibernate:
