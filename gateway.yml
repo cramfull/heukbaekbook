@@ -33,6 +33,7 @@ spring:
               - path: /api/refunds
               - path: /api/carts
               - path: /api/customers
+              - path: /api/coupons
             adminPaths:
               - path: /api/admin/
                 methods: [ GET, POST, PUT, DELETE ]
@@ -100,6 +101,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/customers/**
+        - id: coupon-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/coupons/**
     loadbalancer:
       health-check:
         enabled: true
