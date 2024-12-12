@@ -5,7 +5,7 @@ spring:
     username: be7_heukbaekbook
     password: 2t(o(baz7LQYzuws
     hikari:
-      maximum-pool-size: 1
+      maximum-pool-size: 10
       register-mbeans: true
   data:
     redis:
