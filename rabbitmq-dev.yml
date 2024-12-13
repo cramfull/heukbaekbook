@@ -13,7 +13,7 @@ spring:
     listener:
       simple:
         retry:
-          enabled: true     
+          enabled: true
           max-attempts: 5
           initial-interval: 1000
           multiplier: 2.0
