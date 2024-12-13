@@ -25,7 +25,11 @@ public class CouponIssueListener {
             throw new AmqpException("Invalid message received");
         }
 
-        couponIssueService.issueCouponAsync(issueMessage);
+        try{
+            couponIssueService.issueCouponAsync(issueMessage);
+        }catch (Exception e) {
+            log.info(e.getMessage());
+        }
     }
 
 
