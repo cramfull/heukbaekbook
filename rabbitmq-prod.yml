@@ -1,12 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://133.186.241.167:3306/project_be7_heukbaekbook_dev?serverTimezone=UTC&characterEncoding=UTF-8
+    url: jdbc:mysql://133.186.241.167:3306/project_be7_heukbaekbook_prod?serverTimezone=UTC&characterEncoding=UTF-8
     username: be7_heukbaekbook
     password: 2t(o(baz7LQYzuws
-    hikari:
-      maximum-pool-size: 10
-      register-mbeans: true
   rabbitmq:
     host: 133.186.241.167
     port: 5672
@@ -21,11 +18,3 @@ spring:
         default_batch_fetch_size: 100
     hibernate:
       ddl-auto: none
-  jmx:
-    enabled: true
-
-logging:
-  level:
-    com:
-      zaxxer:
-        hikari: DEBUG
