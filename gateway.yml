@@ -34,6 +34,7 @@ spring:
               - path: /api/carts
               - path: /api/customers
               - path: /api/coupons
+              - path: /api/reviews
             adminPaths:
               - path: /api/admin/
                 methods: [ GET, POST, PUT, DELETE ]
@@ -105,6 +106,10 @@ spring:
           uri: lb://SHOP
           predicates:
             - Path=/api/coupons/**
+        - id: review-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/reviews/**
     loadbalancer:
       health-check:
         enabled: true
