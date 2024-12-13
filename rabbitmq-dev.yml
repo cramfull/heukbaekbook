@@ -10,6 +10,14 @@ spring:
     username: admin
     password: nhnacademy123!
     virtual-host: vh1_dev
+    listener:
+      simple:
+        retry:
+          enabled: true     
+          max-attempts: 5
+          initial-interval: 1000
+          multiplier: 2.0
+          max-interval: 10000
   jpa:
     properties:
       hibernate:
