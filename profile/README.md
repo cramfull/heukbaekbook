@@ -147,7 +147,6 @@
 |              |                                            |              | - Log & Crash Search                    |
 | 검색엔진     | Elastic Search (7.x)                       |              |                                         |
 
-### System Architecture
-One-Liner Architecture 소개
+## System Architecture
 
 ![System Architecture](https://raw.githubusercontent.com/nhnacademy-be7-heukbaekbook/.github/refs/heads/main/profile/system_architecture.png)
