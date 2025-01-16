@@ -121,3 +121,30 @@
         ```
 
 ---
+
+# 개발 환경
+
+## 1-2. 개발 환경
+
+| 구분         | 세부내용                                     | 구분         | 세부내용                                |
+|--------------|----------------------------------------------|--------------|-----------------------------------------|
+| 개발 도구    | IntelliJ IDEA - Ultimate                    | 모델링 (ERD) | ERD Cloud                               |
+| Language     | Java 21 LTS / Eclipse Temurin               | Message Queue | RabbitMQ                                |
+| 빌드 도구    | Maven                                       | 협업 도구    | GitHub Project                          |
+| 개발         | - Spring Framework (5.x)                   | CI/CD        | - Continuous Integration                |
+|              | - Spring Boot (3.3.x)                      |              | - Continuous (Delivery, Deployment)    |
+|              | - Spring Cloud                             |              |   - Github Action                       |
+|              |   - Spring Cloud Gateway                   |              |   - Docker: NHN Container Registry      |
+|              |   - Spring Cloud Netflix (eureka)          | UI           | Bootstrap                               |
+|              |   - Spring Cloud Config                    |              |                                         |
+|              |   - Spring Cloud OpenFeign                 |              |                                         |
+|              | - JPA: Query                               |              |                                         |
+| 테스트 환경  | - Junit 5 / AssertJ / Mockito / SonarQube   |              |                                         |
+|              | - SonarQube Test Coverage 80% 이상         |              |                                         |
+| 데이터베이스 | - MySQL (8.x) / Redis                      | NHN Cloud    | - Instance                              |
+|              |                                            |              | - Secure Key Manager                    |
+|              |                                            |              | - Image Manager                         |
+|              |                                            |              | - Container Registry                    |
+|              |                                            |              | - Load Balancer                         |
+|              |                                            |              | - Log & Crash Search                    |
+| 검색엔진     | Elastic Search (7.x)                       |              |                                         |
