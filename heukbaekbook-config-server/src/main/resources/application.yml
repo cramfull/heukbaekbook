@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ConfigServer
+
+  #config server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:nhnacademy-be7-heukbaekbook/heukbaekbook-config.git
+          ignoreLocalSshSettings: true
+          private-key: ${private.key}
+
+server:
+  port: 9000
+
+nhncloud:
+  keymanager:
+    appKey: 500rMJPT021TnyNl
+    userAccessKeyId: j8vqyIPtFlYonUwbGB7e
+    secretAccessKey: 3Ds4nuzS8pYtC3f8
+
+config:
+  key: db2a2c96c9eb4550a90bd66fd44a22d2
