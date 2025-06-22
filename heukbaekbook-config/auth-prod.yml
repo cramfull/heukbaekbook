@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://133.186.241.167:3306/project_be7_heukbaekbook_prod?serverTimezone=UTC&characterEncoding=UTF-8
+    username: be7_heukbaekbook
+    password: 2t(o(baz7LQYzuws
+  data:
+    redis:
+      host: 133.186.241.167
+      port: 6379
+      password: '*N2vya7H@muDTwdNMR!'
+      database: 105
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: none

@@ -1,0 +1,124 @@
+server:
+  port: 8082
+
+jwt:
+  secret-key: h3w9qWUDH2K1S7owJK9rgrbQjF6jbRof0ep/6nBN+fA=
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - name: JwtAuthorizationFilter
+          args:
+            excludedPaths:
+              - path: /api/auth/
+                methods: [ GET, POST ]
+              - path: /api/books
+              - path: /api/categories
+              - path: /api/members/existsLoginId/
+              - path: /api/members/existsEmail/
+              - path: /api/payments
+              - path: /api/orders
+              - path: /api/delivery-fees
+              - path: /api/wrapping-papers
+              - path: /api/members
+                methods: [ POST ]
+              - path: /api/refunds
+              - path: /api/carts
+              - path: /api/customers
+              - path: /api/coupons
+              - path: /api/reviews
+            adminPaths:
+              - path: /api/admin/
+                methods: [ GET, POST, PUT, DELETE ]
+            memberPaths:
+              - path: /api/members
+                methods: [ GET, PUT, DELETE ]
+              - path: /api/points
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: auth-service-route
+          uri: lb://AUTH
+          predicates:
+            - Path=/api/auth/**
+        - id: book-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/books/**
+        - id: cart-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/carts/**
+        - id: admin-book-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/admin/**
+        - id: member-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/members/**
+        - id: payment-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/payments/**
+        - id: category-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/categories/**
+        - id: point-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/points/**
+        - id: order-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/orders/**
+        - id: delivery-fee-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/delivery-fees/**
+        - id: refund-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/refunds/**
+        - id: wrapping-paper-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/wrapping-papers/**
+        - id: review-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/reviews/**
+        - id: customer-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/customers/**
+        - id: coupon-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/coupons/**
+        - id: review-service-route
+          uri: lb://SHOP
+          predicates:
+            - Path=/api/reviews/**
+    loadbalancer:
+      health-check:
+        enabled: true
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
